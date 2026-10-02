@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.relative{
+    position: relative;
+    margin: 80px;
+    width: 250px;
+    height: 250px;
+}
+
+
+:root{
+    --border: 4px solid;
+}
+
+.bellota{
+    width: max-content;
+    margin: 200px auto;
+    position: relative;
+}
+
+.cara{
+    position: relative;
+    background-color: #FFDCC8;
+    width: 320px;
+    height: 270px;
+    border: var(--border);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.cara::before{
+    content: "";
+    position: absolute;
+    z-index: 10;
+    border-radius: 100% 0% 16% 0% / 100% 0% 44% 0%;
+    border: var(--border);
+    top: -56%;
+    left: -65px;
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: #000;
+}
+
+.cara::after{
+    content: "";
+    position: absolute;
+    border-radius: 0% 100% 0% 16% / 43% 100% 0% 45%;
+    border: var(--border);
+    top: -56%;
+    right: -65px;
+    width: 70%;
+    aspect-ratio: 1/1;
+    background-color: #000;
+}
+
+ .ojo{
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1/1;
+    border: var(--border);
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+ }
+    .ojo-r{
+        top: 30px;
+        right: -20px;
+
+    }
+
+    .ojo-l{
+        top: 20px;
+        left: -30px;
+    }
+    .pupila-l{
+        position: absolute;
+        right: -10px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 70%;
+        height: 74%;
+        background-color: #000;
+        border-radius: 50%;
+        box-shadow: 0 0 0 15px #009011;
+
+    }
+
+    .pupila-l::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 00;
+        margin: auto 0;
+        right: 20px;
+        border-radius: 50%;
+        width: 40%;
+        aspect-ratio: 1/1;
+        background-color: #fff;
+
+    }
+
+    .pupila-r{
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 70%;
+        aspect-ratio: 1/1;
+        background-color: #000;
+        border-radius: 50%;
+        box-shadow: 0 0 0 15px #009011;
+    }
+
+    .pupila-r::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        right: -10px;
+        border-radius: 50%;
+        width: 40%;
+        aspect-ratio: 1/1;
+        background-color: #fff;
+    }
+
+.boca{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border: var(--border);
+    border-radius: 50%;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+}
+
+.cabello{
+    z-index: -1;
+    position: relative;
+    left: -40px;
+    right: -30;
+    top: -190px;
+    width: 150px;
+    height: 130px;
+    background-color: #000;
+    border: var(--border);
+    border-radius: 0% 0% 0% 100% / 0% 100% 0% 100%;
+}
+
+.cabello::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: relative;
+    left: 230px; 
+    top: 2px;
+    width: 160px;
+    height: 130px;
+    background-color: #000;
+    border: var(--border);
+    border-radius: 0% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.picos {
+    position: relative;
+    z-index: -1;
+    left: 230px;
+    top: -232px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 25px solid #000;
+}
+
+.picos::after {
+    content: "";
+    position: absolute;
+    left: 10px; 
+    top: 5px;  
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #000;
+}
